@@ -9,7 +9,7 @@ HTML5, modern JavaScript, CSS Grid, native dialog, localStorage, Service Worker,
 ## GitHub Pages дээр $0 байршуулалт
 
 1. GitHub дээр `ai100-academy` нэртэй **public** repository үүсгэ.
-2. Энэ ZIP-ийн `dist/` доторх файлуудыг repository-ийн **root** хэсэгт байрлуул. `index.html` root-д байх ёстой. `.nojekyll` файлыг хамт оруул.
+2. Энэ ZIP-ийн `` доторх файлуудыг repository-ийн **root** хэсэгт байрлуул. `index.html` root-д байх ёстой. `.nojekyll` файлыг хамт оруул.
 3. Settings → Pages → Build and deployment → Deploy from a branch → `main` → `/(root)` → Save.
 4. Pages-ийн харуулсан URL-аар нээ. Custom domain авах шаардлагагүй.
 5. Шинэчлэлт хийхдээ ижил repository, URL дээр файлуудаа шинэчил. Service worker өөрчлөгдвөл `sw.js` дахь CACHE хувилбарыг өсгө; бүх хуучин цонхыг хааж дахин нээ.
@@ -36,7 +36,7 @@ HTML5, modern JavaScript, CSS Grid, native dialog, localStorage, Service Worker,
 ## macOS дээр ажиллуулах
 
 ```bash
-cd dist
+cd docs
 python3 -m http.server 8000
 ```
 
