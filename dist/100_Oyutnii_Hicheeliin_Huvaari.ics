@@ -1,0 +1,290 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//100 Students AI Course//Schedule//MN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:100 Оюутны хичээлийн хуваарь
+X-WR-TIMEZONE:Asia/Ulaanbaatar
+BEGIN:VTIMEZONE
+TZID:Asia/Ulaanbaatar
+BEGIN:STANDARD
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:+08
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-1@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261107T100000
+DTEND;TZID=Asia/Ulaanbaatar:20261107T123000
+SUMMARY:[AI Хичээл #1] What is AI? History, key concepts (хоёр ангийн нэгдсэн нээлт)
+DESCRIPTION:Хичээл №1 (Week 0)\nСэдэв: What is AI? History, key concepts (хоёр ангийн нэгдсэн нээлт)\nБагш: Myagmarsuren S.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-2@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261109T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261109T203000
+SUMMARY:[AI Хичээл #2] Algorithmic Thinking + Python I: setting up, variables, data types, control flow
+DESCRIPTION:Хичээл №2 (Week 1)\nСэдэв: Algorithmic Thinking + Python I: setting up, variables, data types, control flow\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-3@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261111T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261111T203000
+SUMMARY:[AI Хичээл #3] Python II: functions, lists, dictionaries, loops
+DESCRIPTION:Хичээл №3 (Week 1)\nСэдэв: Python II: functions, lists, dictionaries, loops\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-4@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261112T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261112T203000
+SUMMARY:[AI Хичээл #4] Python III: files, libraries and a first mini-project
+DESCRIPTION:Хичээл №4 (Week 1)\nСэдэв: Python III: files, libraries and a first mini-project\nБагш: Dr Undral B.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-5@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261116T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261116T203000
+SUMMARY:[AI Хичээл #5] Working with data: pandas, cleaning and visualisation
+DESCRIPTION:Хичээл №5 (Week 2)\nСэдэв: Working with data: pandas, cleaning and visualisation\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-6@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261118T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261118T203000
+SUMMARY:[AI Хичээл #6] Machine learning I: how models learn; regression
+DESCRIPTION:Хичээл №6 (Week 2)\nСэдэв: Machine learning I: how models learn; regression\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-7@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261119T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261119T203000
+SUMMARY:[AI Хичээл #7] Machine learning II: classification and evaluating a model
+DESCRIPTION:Хичээл №7 (Week 2)\nСэдэв: Machine learning II: classification and evaluating a model\nБагш: Dr Undral B.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-8@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261123T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261123T203000
+SUMMARY:[AI Хичээл #8] Machine learning III: pre-trained models, Hugging Face and deploying a model
+DESCRIPTION:Хичээл №8 (Week 3)\nСэдэв: Machine learning III: pre-trained models, Hugging Face and deploying a model\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-9@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261125T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261125T203000
+SUMMARY:[AI Хичээл #9] Vibe coding: building projects with AI coding assistants
+DESCRIPTION:Хичээл №9 (Week 3)\nСэдэв: Vibe coding: building projects with AI coding assistants\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-10@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261126T100000
+DTEND;TZID=Asia/Ulaanbaatar:20261126T113000
+SUMMARY:[AI Хичээл #10] Build an AI app end-to-end: from idea to a live demo (deployment)
+DESCRIPTION:Хичээл №10 (Week 3)\nСэдэв: Build an AI app end-to-end: from idea to a live demo (deployment)\nБагш: Baigalmaa Z.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-11@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261130T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261130T203000
+SUMMARY:[AI Хичээл #11] Responsible AI and global AI trends
+DESCRIPTION:Хичээл №11 (Week 4)\nСэдэв: Responsible AI and global AI trends\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-12@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261202T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261202T203000
+SUMMARY:[AI Хичээл #12] Capstone kick-off: problem selection, team formation, project charter
+DESCRIPTION:Хичээл №12 (Week 4)\nСэдэв: Capstone kick-off: problem selection, team formation, project charter\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-13@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261203T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261203T203000
+SUMMARY:[AI Хичээл #13] No Code Automation
+DESCRIPTION:Хичээл №13 (Week 4)\nСэдэв: No Code Automation\nБагш: Enkhmanlai B.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-14@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261207T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261207T203000
+SUMMARY:[AI Хичээл #14] APIs and calling LLMs from Python
+DESCRIPTION:Хичээл №14 (Week 5)\nСэдэв: APIs and calling LLMs from Python\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-15@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261209T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261209T203000
+SUMMARY:[AI Хичээл #15] GitHub, hosting a web app, introduction to cloud services
+DESCRIPTION:Хичээл №15 (Week 5)\nСэдэв: GitHub, hosting a web app, introduction to cloud services\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-16@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261210T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261210T203000
+SUMMARY:[AI Хичээл #16] Creative AI Workshop
+DESCRIPTION:Хичээл №16 (Week 5)\nСэдэв: Creative AI Workshop\nБагш: Tsetsenbileg D.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-17@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261214T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261214T203000
+SUMMARY:[AI Хичээл #17] Capstone build I: prototype review and technical mentoring
+DESCRIPTION:Хичээл №17 (Week 6)\nСэдэв: Capstone build I: prototype review and technical mentoring\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-18@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261216T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261216T203000
+SUMMARY:[AI Хичээл #18] Capstone build II: mentoring clinic (optional sponsor guest)
+DESCRIPTION:Хичээл №18 (Week 6)\nСэдэв: Capstone build II: mentoring clinic (optional sponsor guest)\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-19@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261217T160000
+DTEND;TZID=Asia/Ulaanbaatar:20261217T173000
+SUMMARY:[AI Хичээл #19] Capstone build III: System Deployment
+DESCRIPTION:Хичээл №19 (Week 6)\nСэдэв: Capstone build III: System Deployment\nБагш: Baigalmaa Z.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-20@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261219T190000
+DTEND;TZID=Asia/Ulaanbaatar:20261219T203000
+SUMMARY:[AI Хичээл #20] Capstone rehearsal: dry-run presentations and feedback
+DESCRIPTION:Хичээл №20 (Week 6)\nСэдэв: Capstone rehearsal: dry-run presentations and feedback\nБагш: Temuulen M.
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ai-course-2026-lesson-21@schedule.mn
+DTSTAMP:20261107T013000Z
+DTSTART;TZID=Asia/Ulaanbaatar:20261226T090000
+DTEND;TZID=Asia/Ulaanbaatar:20261226T170000
+SUMMARY:[AI Хичээл #21] Demo Day (танхим): presentations, jury, closing, certificates
+DESCRIPTION:Хичээл №21 (Week 7)\nСэдэв: Demo Day (танхим): presentations, jury, closing, certificates\nБагш: Бүх багш, шүүгчийн бүрэлдэхүүн
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

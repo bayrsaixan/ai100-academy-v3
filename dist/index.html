@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="AI100 Academy — 8 долоо хоног, 21 хичээлтэй AI суралцах хувийн dashboard. Хичээл, дасгал, тэмдэглэл, AI ментор, Capstone төслийг нэг дор.">
+  <title>AI100 Academy — Student Workspace · 3.0</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="v3.css"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg" type="image/svg+xml">
+  <script defer src="course-data.js"></script>
+  <script defer src="app.js"></script><script defer src="workspace.js"></script>
+</head>
+<body data-theme="light">
+  <a class="skip-link" href="#main-content">Үндсэн агуулга руу очих</a>
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A3.5 3.5 0 0 1 3 18.5v-13A3.5 3.5 0 0 1 6.5 2Z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7zM19 17l.8 2.2L22 20l-2.2.8L19 23l-.8-2.2L16 20l2.2-.8z"/></symbol>
+    <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M12 15 9 12c1.7-4.5 5.3-7.7 11-9-.2 5.7-3.2 9.5-8 12zM9 12l-3.5 0L3 16l5-1M12 15l0 3.5L8 21l1-5M15 9l.01 0M5 19l-2 2"/></symbol>
+    <symbol id="i-notes" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15.5A8 8 0 0 1 8.5 4 8.5 8.5 0 1 0 20 15.5Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="7"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 18v-11a4 4 0 0 0-7.4-2.1A4 4 0 0 0 4 11a4 4 0 0 0 3.5 7.8A3.5 3.5 0 0 0 12 21m0-3V7a4 4 0 0 1 7.4-2.1A4 4 0 0 1 20 11a4 4 0 0 1-3.5 7.8A3.5 3.5 0 0 1 12 21"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 16l4-5 4 3 5-8"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5zM3 12l9 5 9-5M3 17l9 5 9-5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 2 21h20zM12 9v5m0 3h.01"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 9 4v6c0 5.5-3.5 8.5-9 10-5.5-1.5-9-4.5-9-10V6zM9 12l2 2 4-4"/></symbol>
+  </svg>
+  <div class="app-shell">
+    <div id="sidebar-backdrop" class="sidebar-backdrop" hidden></div>
+    <aside class="sidebar" id="sidebar" aria-label="Үндсэн цэс">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">A<span>✳</span></div>
+        <div class="brand-copy"><strong>AI100<span> Academy</span></strong><small>STUDENT WORKSPACE</small></div>
+      </div>
+      <div class="cohort-tag"><span class="live-dot"></span> 2026 COHORT <span class="cohort-divider">/</span> 8 WEEKS</div>
+      <div class="nav-title">АЖЛЫН ОРЧИН</div>
+      <nav class="sidebar-nav" aria-label="Суралцах хэсгүүд">
+        <button class="nav-link active" data-nav="dashboard" aria-current="page"><svg class="icon"><use href="#i-home"/></svg><span>Миний workspace</span></button>
+        <button class="nav-link" data-nav="curriculum"><svg class="icon"><use href="#i-book"/></svg><span>Сургалтын замнал</span><span class="nav-count">5</span></button>
+        <button class="nav-link" data-nav="schedule"><svg class="icon"><use href="#i-calendar"/></svg><span>Хичээлийн хуваарь</span><span class="nav-count">21</span></button>
+        <button class="nav-link" data-nav="mentor"><svg class="icon"><use href="#i-spark"/></svg><span>AI Ментор</span></button>
+        <button class="nav-link" data-nav="capstone"><svg class="icon"><use href="#i-rocket"/></svg><span>Capstone Studio</span></button>
+        <button class="nav-link" data-nav="notes"><svg class="icon"><use href="#i-notes"/></svg><span>Миний тэмдэглэл</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-goal">
+          <span class="goal-icon"><svg class="icon"><use href="#i-target"/></svg></span>
+          <strong>Demo Day хүртэл</strong>
+          <span class="goal-number" id="sidebar-days">49 хоног</span>
+          <small>2026 оны 12 сарын 26</small>
+          <div class="goal-track"><div id="sidebar-progress"></div></div>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" type="button"><svg class="icon"><use href="#i-sun"/></svg><span>Гэрэлтэй горим</span><span class="theme-shortcut">◐</span></button>
+        <div class="sidebar-footer">Made for learning, not just tracking.<br><span>AI100 Learning Hub · v3.0</span></div>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="icon-button mobile-menu" id="menu-toggle" aria-label="Цэс нээх" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+          <div class="breadcrumbs"><span>AI100 Academy</span><svg class="icon"><use href="#i-chevron"/></svg><strong id="page-breadcrumb">Миний workspace</strong></div>
+        </div>
+        <div class="topbar-right"><span class="top-date" id="today-label">2026 • Asia/Ulaanbaatar</span><span class="top-separator"></span><button class="text-button top-search" data-nav="schedule" aria-label="Хичээл хайх">⌕ Хайх <kbd>⌘ K</kbd></button><span class="avatar" title="Миний суралцах орчин">AI</span></div>
+      </header>
+      <main id="main-content" tabindex="-1">
+        <section class="view active" id="view-dashboard" aria-labelledby="dashboard-title">
+          <div class="page-heading"><div><div class="eyebrow">YOUR PERSONAL LEARNING SPACE <span class="eyebrow-line"></span> 2026</div><h1 id="dashboard-title">Өнөөдөр юу <span class="gradient-text">бүтээх вэ?</span></h1><p class="lead">8 долоо хоногийн суралцах замнал. Мэдлэгээс бодит бүтээгдэхүүн хүртэл.</p></div><button class="button subtle-button" id="dashboard-calendar"><svg class="icon"><use href="#i-download"/></svg> Calendar татах</button></div>
+          <div class="study-grid">
+            <section class="study-hero"><span class="section-kicker">TODAY’S FOCUS / ӨНӨӨДРИЙН АЛХАМ</span><div class="hero-topline"><span class="lesson-badge" id="focus-meta">WEEK 0 · LESSON 01</span><span class="hero-pill">● Өөрийн хурдаар</span></div><h2 id="focus-title">Жижиг алхам.<br>Том боломж.</h2><p id="focus-description"></p><div class="hero-bottom"><button id="focus-open" class="button primary-button">Үргэлжлүүлэн сурах →</button><span>Унш. Турш. Тэмдэглэ.</span></div><div class="hero-number" aria-hidden="true">01</div></section>
+            <section class="focus-timer surface-card"><div class="timer-heading"><span class="section-kicker">FOCUS SESSION</span><span class="timer-dot"></span></div><h2>Нэг зүйлд төвлөр.</h2><div id="timer-display" role="timer" aria-label="Үлдсэн хугацаа">25:00</div><p id="timer-message" role="status">25 минут суралцаад, завсарлаарай.</p><div class="timer-actions"><button id="timer-toggle" class="button primary-button">Эхлүүлэх</button><button id="timer-reset" class="button outline-button" aria-label="Таймер дахин эхлүүлэх">↺</button></div></section>
+          </div>
+          <div class="workspace-notice"><span id="offline-status">● Энэ төхөөрөмж дээр хадгална</span><button class="text-button" data-nav="notes">Тэмдэглэлээ нөөцлөх ↗</button></div>
+          <div class="stat-grid" id="dashboard-stats"></div>
+          <div class="dashboard-columns">
+            <div class="dashboard-main-col">
+              <div class="section-header"><div><span class="section-kicker">YOUR LEARNING PATH</span><h2>5 үндсэн модуль</h2></div><button class="text-button" data-nav="curriculum">Бүгдийг харах <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+              <div class="dashboard-module-grid" id="dashboard-modules"></div>
+              <div class="section-header next-header"><div><span class="section-kicker">KEEP THE MOMENTUM</span><h2>Үргэлжлүүлэн суралцах</h2></div></div>
+              <div id="continue-card"></div>
+            </div>
+            <div class="dashboard-side-col">
+              <div class="section-header"><div><span class="section-kicker">UP NEXT</span><h2>Ойрын хичээлүүд</h2></div><button class="text-button" data-nav="schedule">Хуваарь <svg class="icon"><use href="#i-arrow"/></svg></button></div>
+              <div class="surface-card upcoming-card" id="dashboard-upcoming"></div>
+              <div class="mentor-teaser"><span class="teaser-glyph"><svg class="icon"><use href="#i-spark"/></svg></span><div><div class="teaser-label">AI MENTOR IS HERE</div><h3>Гацсан уу? Хамт бодъё.</h3><p>Тайлбар, code review, практик даалгаврыг 1 товшоод эхлүүл.</p><button class="teaser-link" data-nav="mentor">AI Ментор нээх <svg class="icon"><use href="#i-arrow"/></svg></button></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="view-curriculum" aria-labelledby="curriculum-title">
+          <div class="page-heading"><div><div class="eyebrow">STRUCTURED LEARNING ROADMAP</div><h1 id="curriculum-title">Сургалтын <span class="gradient-text">замнал</span></h1><p class="lead">8 долоо хоног, 5 модуль, 21 хичээл. Модуль бүрээс хичээлээ нээнэ үү.</p></div></div>
+          <div class="curriculum-progress surface-card" id="curriculum-overview"></div>
+          <div class="module-roadmap" id="curriculum-modules"></div>
+          <p class="source-note"><svg class="icon"><use href="#i-shield"/></svg> Модулийн агуулга, суралцах үр дүнг хөтөлбөрийн зурагт тулгуурласан. Хичээл доторх асуулт, дасгал, кодын жишээ нь суралцахад зориулж нэмсэн материал.</p>
+        </section>
+
+        <section class="view" id="view-schedule" aria-labelledby="schedule-title">
+          <div class="page-heading"><div><div class="eyebrow">NOV 07 — DEC 26, 2026</div><h1 id="schedule-title">Хичээлийн <span class="gradient-text">хуваарь</span></h1><p class="lead">21 хичээл • Week 0–7 • Улаанбаатарын цаг (UTC+8)</p></div><a class="button outline-button" href="100_Oyutnii_Hicheeliin_Huvaari.ics" download><svg class="icon"><use href="#i-download"/></svg> .ics татах</a></div>
+          <div class="filter-panel"><label class="search-field"><svg class="icon"><use href="#i-search"/></svg><span class="sr-only">Хичээл хайх</span><input id="lesson-search" type="search" placeholder="Сэдэв, багш эсвэл ойлголтоор хайх..." autocomplete="off"></label><label class="select-wrap"><span class="sr-only">Долоо хоног сонгох</span><select id="week-filter"><option value="all">Бүх долоо хоног</option><option value="0">Week 0</option><option value="1">Week 1</option><option value="2">Week 2</option><option value="3">Week 3</option><option value="4">Week 4</option><option value="5">Week 5</option><option value="6">Week 6</option><option value="7">Week 7</option></select></label><label class="select-wrap"><span class="sr-only">Хичээлийн төлөв</span><select id="status-filter"><option value="all">Бүх төлөв</option><option value="todo">Судлах</option><option value="done">Дууссан</option></select></label></div>
+          <div class="list-subhead"><span id="schedule-count">21 хичээл</span><span>Хичээл дээр дарж дэлгэрэнгүй үзнэ</span></div>
+          <div class="schedule-list" id="schedule-list"></div>
+        </section>
+
+        <section class="view" id="view-mentor" aria-labelledby="mentor-title">
+          <div class="page-heading"><div><div class="eyebrow">YOUR PERSONAL AI STUDY ASSISTANT</div><h1 id="mentor-title">AI <span class="gradient-text">Ментор</span></h1><p class="lead">Сайн асуулт → гүн ойлголт → илүү сайн код. Prompt-оо бэлдэж ChatGPT-д ашигла.</p></div></div>
+          <div class="mentor-layout"><div class="surface-card mentor-config"><h2>Суралцах нөхцөл</h2><p class="muted">Доорх сонголтоор хичээлд тохирсон prompt үүсгэнэ.</p><label class="field-label" for="mentor-lesson">Хичээл сонгох</label><select id="mentor-lesson" class="form-control"></select><label class="field-label" for="mentor-mode">Юунд туслуулах вэ?</label><select id="mentor-mode" class="form-control"><option value="prepare">Хичээлийн өмнөх бэлтгэл</option><option value="explain">Онол + бодит жишээ</option><option value="code">Кодын тайлбар ба debug</option><option value="challenge">Практик даалгавар авах</option><option value="review">Өөрийн кодоо review хийлгэх</option><option value="capstone">Capstone-той холбох</option></select><label class="field-label" for="mentor-context">Нэмэлт мэдээлэл <span class="optional">(заавал биш)</span></label><textarea id="mentor-context" class="form-control" rows="5" placeholder="Аль хэсгийг ойлгоогүй вэ? Алдааны мессеж эсвэл кодоо бич..."></textarea><div class="privacy-tip"><svg class="icon"><use href="#i-shield"/></svg><span>Нууц үг, API key болон хувийн мэдрэмтгий мэдээлэл оруулахгүй.</span></div><button class="button primary-button full-width" id="generate-prompt">Prompt шинэчлэх <svg class="icon"><use href="#i-spark"/></svg></button></div><div class="surface-card mentor-preview"><div class="preview-top"><div><span class="code-dot orange"></span><span class="code-dot yellow"></span><span class="code-dot green"></span><span class="preview-file">mentor-prompt.md</span></div><span class="preview-label">READY TO USE</span></div><pre id="mentor-output" class="prompt-output"></pre><div class="preview-actions"><span class="prompt-hint">Өөрийн AI чат руу хуулж оруулаарай.</span><button class="button outline-button" id="copy-prompt"><svg class="icon"><use href="#i-copy"/></svg> Prompt хуулах</button></div></div></div>
+          <div class="mentor-how"><div class="section-header"><div><span class="section-kicker">PROVEN STUDY LOOP</span><h2>Суралцах 5 алхам</h2></div></div><div class="five-steps" id="mentor-steps"></div></div>
+          <p class="source-note">Энэ хувилбар нь ChatGPT API руу шууд холбогдохгүй. Таны код, өгөгдөл автоматаар гадагш илгээгдэхгүй; prompt-ыг та өөрөө хуулаад ашиглана.</p>
+        </section>
+
+        <section class="view" id="view-capstone" aria-labelledby="capstone-title">
+          <div class="page-heading"><div><div class="eyebrow">FROM IDEA TO DEMO DAY</div><h1 id="capstone-title">Capstone <span class="gradient-text">Studio</span></h1><p class="lead">Төгсөлтийн төслөө санаанаас танилцуулга хүртэл төлөвлөж, алхам бүрийг хяна.</p></div><span class="date-chip"><svg class="icon"><use href="#i-calendar"/></svg> DEMO DAY · 26 DEC</span></div>
+          <div class="capstone-hero"><div><span class="section-kicker">YOUR NORTH STAR</span><h2>Build a product,<br><em>not just a model.</em></h2><p>3–4 хүний баг · Project charter · Prototype · Deployment · Live demo</p></div><div class="capstone-orbit" aria-hidden="true"><svg class="icon"><use href="#i-rocket"/></svg></div></div>
+          <div class="capstone-columns"><div><div class="section-header"><div><span class="section-kicker">PROJECT CHARTER</span><h2>Миний төслийн төлөвлөгөө</h2></div><span class="auto-save">● Автоматаар хадгална</span></div><form id="project-form" class="surface-card project-form"><label class="field-label" for="project-name">Төслийн нэр</label><input class="form-control" name="name" id="project-name" placeholder="Жишээ: Student Success AI" maxlength="120"><label class="field-label" for="project-problem">Шийдэх асуудал</label><textarea class="form-control" name="problem" id="project-problem" rows="3" placeholder="Хэн ямар асуудалтай байна вэ?"></textarea><div class="form-2col"><div><label class="field-label" for="project-audience">Зорилтот хэрэглэгч</label><input class="form-control" name="audience" id="project-audience" placeholder="Хэнд зориулсан?" maxlength="160"></div><div><label class="field-label" for="project-team">Багийн гишүүд / үүрэг</label><input class="form-control" name="team" id="project-team" placeholder="3–4 хүн, хэн юуг хийх вэ?" maxlength="300"></div></div><label class="field-label" for="project-mvp">MVP · 3 үндсэн боломж</label><textarea class="form-control" name="mvp" id="project-mvp" rows="3" placeholder="1. ...&#10;2. ...&#10;3. ..."></textarea><label class="field-label" for="project-metric">Амжилтын хэмжүүр</label><input class="form-control" name="metric" id="project-metric" placeholder="Жишээ: 10 хэрэглэгчийн 8 нь даалгавраа дуусгана" maxlength="250"><p class="form-footer-note">Мэдээлэл зөвхөн таны браузерын localStorage-д хадгалагдана.</p></form></div><div><div class="section-header"><div><span class="section-kicker">YOUR DELIVERY PLAN</span><h2>Төслийн milestone</h2></div><span id="milestone-progress" class="milestone-count">0/6</span></div><div class="surface-card milestones" id="milestone-list"></div><div class="surface-card demo-checklist"><span class="section-kicker">BEFORE YOU PRESENT</span><h3>Demo Day readiness</h3><div id="demo-checks"></div></div></div></div>
+        </section>
+
+        <section class="view" id="view-notes" aria-labelledby="notes-title">
+          <div class="page-heading"><div><div class="eyebrow">YOUR SECOND BRAIN</div><h1 id="notes-title">Миний <span class="gradient-text">тэмдэглэл</span></h1><p class="lead">Хичээл бүрийн ойлголт, асуулт, алдааны тэмдэглэл энд нэг дор хадгалагдана.</p></div><div class="notes-actions"><button class="button outline-button" id="export-markdown">Markdown татах</button><button class="button outline-button" id="export-data"><svg class="icon"><use href="#i-download"/></svg> Backup татах</button><label class="button outline-button import-label"><svg class="icon"><use href="#i-book"/></svg> Backup оруулах<input type="file" id="import-data" accept="application/json,.json" hidden></label></div></div>
+          <div class="backup-banner"><svg class="icon"><use href="#i-alert"/></svg><span>Таны ахиц, тэмдэглэл зөвхөн энэ төхөөрөмжийн браузерт хадгалагдана. Хөтөчийн өгөгдөл цэвэрлэгдэхээс өмнө <strong>Backup татаж</strong> аваарай.</span></div>
+          <div class="notes-filter"><label class="search-field"><svg class="icon"><use href="#i-search"/></svg><span class="sr-only">Тэмдэглэл хайх</span><input id="notes-search" type="search" placeholder="Тэмдэглэл эсвэл хичээл хайх..."></label></div>
+          <div id="notes-list" class="notes-list"></div>
+          <div class="danger-row"><span>Ахиц, тэмдэглэл болон төслийн мэдээллээ устгах</span><button class="button danger-button" id="reset-data">Бүх өгөгдөл цэвэрлэх</button></div>
+        </section>
+      </main>
+      <footer class="site-footer"><span>AI100 Academy · Designed for deliberate practice.</span><span>Сургалтын хуваарийн цаг: Asia/Ulaanbaatar (UTC+8)</span></footer>
+    </div>
+  </div>
+
+  <dialog id="lesson-dialog" class="lesson-dialog" aria-labelledby="dialog-title"><div id="lesson-dialog-content"></div></dialog>
+  <nav class="mobile-bottom" aria-label="Шуурхай цэс"><button data-nav="dashboard">⌂<span>Өнөөдөр</span></button><button data-nav="curriculum">▤<span>Хичээл</span></button><button data-nav="notes">✎<span>Notes</span></button><button data-nav="capstone">◇<span>Төсөл</span></button></nav><div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
